@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.DataGrid;assembly=Syncfusion.Maui.DataGrid"
+             x:Class="SfDataGridMAUIStyleOnDeselect.MainPage">
+
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="syncfusion:DataGridCell">
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Magenta}, Dark={StaticResource White}}" />
+            </Style>
+        </Grid.Resources>
+        <syncfusion:SfDataGrid x:Name="gridContent" SelectionMode="Single" />
+    </Grid>
+</ContentPage>
